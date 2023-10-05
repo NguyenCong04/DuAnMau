@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuenMatKhauActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:background="@android:color/black"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/ivBack"
+
+            android:src="@drawable/baseline_keyboard_backspace_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khôi phục mật khẩu "
+            android:layout_gravity="center_vertical"
+            android:textColor="#fff"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập tên tài khoản "
+            android:fontFamily="serif"
+            android:textStyle="bold"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/edTenTaiKhoanKhoiPhuc"
+            android:hint="Nhập tên tài khoản"
+            android:background="@drawable/custom_ed_dialog"
+            android:padding="16dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="serif"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/btnCheckTaiKhoan"
+            android:text="Khổi phục mật khẩu"
+            android:fontFamily="serif"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:background="@drawable/style_btn_login"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:id="@+id/tvDangNhap"
+
+        android:text="Đăng nhập"
+        android:fontFamily="serif"
+        android:textSize="16dp"
+        android:gravity="bottom"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textColor="#00bcd2"
+        android:textDirection="inherit"
+
+        />
+
+
+</LinearLayout>

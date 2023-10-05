@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_android_edit"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FFFAFA"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+
+            >
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_welcom2"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thông kê doanh thu"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textColor="#00bcd2"
+                android:layout_marginBottom="10dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Từ ngày"
+                android:fontFamily="serif"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/edNhapNgayBatDau"
+
+                android:inputType="none"
+                android:cursorVisible="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:hint="Nhập ngày bắt đầu"
+                android:fontFamily="serif"
+                android:background="@drawable/custom_ed_dialog"
+                android:padding="15dp"
+                android:layout_marginTop="3dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đến ngày"
+                android:fontFamily="serif"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/edNgayKetThuc"
+                android:hint="Nhập ngày kết thúc"
+                android:fontFamily="serif"
+                android:background="@drawable/custom_ed_dialog"
+                android:padding="15dp"
+                android:layout_marginTop="3dp"
+                android:inputType="none"
+                android:cursorVisible="false"
+                android:clickable="false"
+                android:focusable="false"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/btnThongKeDoanhThu"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="15dp"
+                android:text="Thống kê doanh thu"
+                android:fontFamily="serif"
+                android:background="@drawable/custom_btn_add_dialog"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:background="#99FCF3F3"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Doanh thu : "
+                        android:fontFamily="serif"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:id="@+id/tvDoanhThu"
+
+                        android:textSize="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="serif"
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

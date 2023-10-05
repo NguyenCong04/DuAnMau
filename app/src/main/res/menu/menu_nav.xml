@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:title="Quản lý">
+
+            <menu>
+                <item android:id="@+id/itemPhieuMuon"
+                    android:title="Quản lý phiếu mượn"
+                    android:icon="@drawable/img_phieu_muon"/>
+                <item android:id="@+id/itemLoaiSach"
+                    android:title="Quản lý loại sách"
+                    android:icon="@drawable/img_loai_sach"
+                    />
+                <item android:id="@+id/itemSach"
+                    android:title="Quản lý sách"
+                    android:icon="@drawable/img_sach"/>
+                <item android:id="@+id/itemThanhVien"
+                    android:title="Quản lý thành viên"
+                    android:icon="@drawable/img_thanh_vien"/>
+            </menu>
+
+        </item>
+    </group>
+
+
+
+    <group>
+
+        <item android:title="Thống kế">
+
+            <menu>
+                <item android:id="@+id/itemTop10SachMuonNhieuNhat"
+                    android:title="Top 10 sách mượn nhiều nhất"
+                    android:icon="@drawable/img_top_10"/>
+
+                <item android:id="@+id/itemDoanhThu"
+                    android:title="Doanh thu"
+                    android:icon="@drawable/img_doanh_thu"/>
+            </menu>
+
+        </item>
+
+    </group>
+
+
+    <group>
+
+        <item android:title="Khác">
+
+            <menu>
+
+                <item android:id="@+id/itemThemNguoiDung"
+                    android:title="Thêm người dùng"
+                    android:icon="@drawable/img_them_nguoi_dung"/>
+
+                <item android:id="@+id/itemDoiMatKhau"
+                    android:title="Đổi mật khẩu"
+                    android:icon="@drawable/img_doi_mat_khau"/>
+
+                <item android:id="@+id/itemDangXuat"
+                    android:title="Đăng xuất"
+                    android:icon="@drawable/img_dang_xuat"/>
+            </menu>
+
+        </item>
+
+    </group>
+
+
+</menu>

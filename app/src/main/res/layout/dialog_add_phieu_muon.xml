@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white"
+    android:elevation="35dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm thông tin phiếu mượn"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:background="@drawable/bg_top_dialog"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Họ tên"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/spTenThanhVienDialogAdd"
+            android:fontFamily="serif"
+            android:background="@drawable/custom_ed_dialog"
+            android:layout_marginTop="3dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên sách"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/spTenSachDialogAddPhieuMuon"
+            android:background="@drawable/custom_ed_dialog"
+            android:layout_marginTop="3dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày mượn"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/edNgayMuonPhieuMuonDialogAdd"
+            android:hint="Nhập giá ngày mượn"
+            android:fontFamily="serif"
+            android:background="@drawable/custom_ed_dialog"
+            android:padding="16dp"
+            android:layout_marginTop="3dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:inputType="none"
+            android:cursorVisible="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giá thuê"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/edGiaThuePhieuMuonDialogAdd"
+            android:hint="Nhập giá thuê sách"
+            android:fontFamily="serif"
+            android:background="@drawable/custom_ed_dialog"
+            android:padding="16dp"
+            android:layout_marginTop="3dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:inputType="none"
+            android:cursorVisible="false"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Trạng thái"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/spTrangThaiDialogAdd"
+            android:background="@drawable/custom_ed_dialog"
+            android:layout_marginTop="3dp"
+
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:id="@+id/btnHuyDialogAddPhieuMuon"
+
+            android:text="Hủy"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/custom_btn_exit_dialog"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:id="@+id/btnThemPhieuMuonDialogAdd"
+
+            android:text="Xác nhận"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="@drawable/custom_btn_add_dialog"
+            android:layout_marginLeft="10dp"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
